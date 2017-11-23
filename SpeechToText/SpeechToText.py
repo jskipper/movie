@@ -14,9 +14,6 @@ from google.cloud.speech import enums
 from google.cloud.speech import types
 from pydub import AudioSegment
 
-# Instantiates a client
-client = speech.SpeechClient()
-
 
 # reads the audio file and check that it has the required number of audio channels, sample width, and sample rate
 # returns the sample rate
@@ -166,7 +163,7 @@ def main(args):
             'Usage: example.py <aggressiveness> <path to wav file>\n')
         sys.exit(1)
 
-#   the future to be json file
+    #   the future to be json file
     json_for_export = {}
     json_for_export['transcript'] = []
 
@@ -202,6 +199,8 @@ def main(args):
     with open('data.txt', 'w') as outfile:
         json.dump(json_for_export, outfile)
 
+    #here we'll import the new json file and compare it with the subtitles
+    #need to write that function
     with open('data.txt') as json_file:
         data = json.load(json_file)
 
@@ -209,4 +208,8 @@ def main(args):
 
 
 if __name__ == '__main__':
+
+    # Instantiates a client for Google cloud
+    client = speech.SpeechClient()
+
     main(sys.argv[1:])
