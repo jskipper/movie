@@ -206,7 +206,7 @@ def main(args):
 
     subtitles = pysrt.open('500days_sub.srt')
 
-
+#this is the new code
 if __name__ == '__main__':
 
     # Instantiates a client for Google cloud
