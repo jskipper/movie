@@ -1,5 +1,17 @@
 # movie
 
+
+**Youtube API calls**
+----
+You'll have to install the google API python client.
+
+`pip install --upgrade google-api-python-client`
+
+
+To run the code:
+`python YoutubeCall.py NAME OF THE SEARCH`
+e.g. Batman Returns scene
+
 **SpeechToText**
 ----
 This will get an audio file, detect speech segments, send them to the Google Cloud Speech API and get a json file back with the content and the start time in seconds.
