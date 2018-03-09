@@ -1,5 +1,13 @@
 # movie
 
+**Video-to-fMRI alignment**
+----
+Code will use the times recorded while scanning the participant, make periods with their own duration and then add 'capsules' that contain timepoints in the movie within every 1000ms elapsed since the first TTL pulse
+
+Work in progress
+
+
+
 
 **Youtube API calls**
 ----
