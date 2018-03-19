@@ -54,3 +54,14 @@ Comment our the `transcribe` function if not needed
 Run SpeechToText.py with aggressivenes as 0, 1, 2 or 3 (the more aggressive, the harsher it will differentiate between speech and non-speech):
 
 `python SpeechToText.py <agressiveness index> <input_file_name>`
+
+----------------------------------------------------------------
+Useful commands for processing the video files
+
+To concatenate mp4 files with ffmpeg
+
+`touch files.txt` where you add for each row: file 'path/to/file'
+
+`cat filex.txt` to check files
+
+`ffmpeg -f concat -i files.txt -c copy output_name.mp4`
